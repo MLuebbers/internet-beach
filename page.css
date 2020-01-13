@@ -1,0 +1,56 @@
+.page * {
+    margin: 0;
+    padding: 0;
+
+    --spacer-small: 1em;
+    --spacer-medium: 2em;
+    --spacer-large: 4em;
+
+    --font-large: 24pt;
+    --font-small: 12pt; 
+
+    font-family: 'Gelasio', serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: var(--font-small);
+
+    list-style: none;
+    
+}
+
+.page {
+    padding: var(--spacer-small);
+    overflow-y: scroll;
+}
+.page header {
+    background-color: gray;
+    width: 100%;
+    height: var(--font-large);
+    margin-bottom: var(--spacer-small);
+}
+
+.page article {
+ margin: var(--spacer-small);
+}
+.page article div {
+    background-color: lightgray;
+    height: var(--font-small);
+    margin: 2pt var(--spacer-small) 0 var(--spacer-small);
+}
+.page article div:first-child{
+    margin-left: var(--spacer-medium);
+}
+.page article div:last-child{
+    margin-right: var(--spacer-large);
+}
+
+.page nav ul li {
+    transition: background-color 0.1s ease-in;
+    width: 25%;
+    height: var(--font-small);
+    margin: 4pt 0 0 var(--spacer-small);
+    background-color: rgb(255, 239, 151);
+}
+.page nav ul li:hover{
+    background-color: rgb(216, 68, 68);
+}

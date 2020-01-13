@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    --spacer-small: 1em;
+    --spacer-medium: 2em;
+    --spacer-large: 4em;
+
+    --font-large: 24pt;
+    --font-small: 12pt; 
+
+    font-family: 'Gelasio', serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: var(--font-small);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    vertical-align: top;
+    border: black 0.25px solid;
+}
+
+section img {
+    width: 50%;
+}
+section aside {
+    width: 50%;
+    margin: var(--spacer-small);
+}
+
+section aside header {
+}
+
+section aside text {
+
+}
+
+section aside .number {
+    position: absolute;
+    margin: var(--spacer-small);
+    bottom: 0;
+    right: 0;
+}
+.page {
+    position: absolute;
+    top: -20vh;
+    /* left: -20vh; */
+    height: 30vh;
+    width: 30vh;
+    
+    border: 0.25px solid black;
+    z-index: -100000;
+}
+
+.anchor-point {
+    position: absolute;
+}
